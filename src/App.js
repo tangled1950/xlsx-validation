@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import XLSX from './needToReplace/xlsx';
+/* eslint import/no-webpack-loader-syntax: off */
+import XLSX from '../loaders/xlsx-loader!xlsx';
 import saveAs from 'file-saver';
 
 class App extends Component {
